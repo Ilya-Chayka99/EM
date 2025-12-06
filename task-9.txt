@@ -1,0 +1,56 @@
+root@cv3725409:~# service ssh
+ * Usage: /etc/init.d/ssh {start|stop|reload|force-reload|restart|try-restart|status}
+root@cv3725409:~# service ssh start
+root@cv3725409:~# service ssh status
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sat 2025-10-04 11:36:17 MSK; 2 months 2 days ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 697 (sshd)
+      Tasks: 3 (limit: 19155)
+     Memory: 11.2M
+        CPU: 4h 20min 56.476s
+     CGroup: /system.slice/ssh.service
+             ├─    697 "sshd: /usr/sbin/sshd -D [listener] 1 of 10-100 startups"
+             ├─3132721 "sshd: unknown [priv]"
+             └─3132723 "sshd: unknown [net]" ""
+
+
+C:\Users\ilya->ssh ubi@79.174.93.145
+ubi@79.174.93.145's password:
+Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 5.15.0-76-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Nov  6 10:44:40 AM MSK 2025
+
+  System load:  0.44                Processes:             371
+  Usage of /:   71.6% of 118.06GB   Users logged in:       1
+  Memory usage: 87%                 IPv4 address for ens3: 192.168.0.***
+  Swap usage:   85%
+
+  => There are 7 zombie processes.
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+256 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+9 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+New release '24.04.3 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+You have new mail.
+Last login: Sat Dec  6 14:18:19 2025 from 91.235.88.***
+root@cv3725409:~#
