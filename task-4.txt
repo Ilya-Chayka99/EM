@@ -1,0 +1,11 @@
+SELECT * from Employees WHERE id = 1
+
+1	John	Doe	1@mail.com	5000	1
+
+UPDATE Employees
+SET FirstName = 'Robert'
+WHERE Id = 1;
+
+SELECT * from Employees WHERE id = 1
+
+1	Robert	Doe	1@mail.com	5000	1

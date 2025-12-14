@@ -1,0 +1,9 @@
+SELECT d.Name, COUNT(*) AS EmployeeCount
+FROM Employees
+join Departments as d
+on d.Id = Employees.DepartmentId
+GROUP BY DepartmentId;
+
+"IT"	"2"
+"HR"	"1"
+

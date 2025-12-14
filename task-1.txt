@@ -1,0 +1,25 @@
+CREATE DATABASE Company;
+
+CREATE TABLE Departments (
+    Id INT PRIMARY KEY,
+    Name VARCHAR(50) NOT NULL,
+    Location VARCHAR(50)
+);
+
+CREATE TABLE Employees (
+    Id INT PRIMARY KEY,
+    FirstName TEXT NOT NULL,
+    LastName TEXT NOT NULL,
+    Email TEXT,
+    Salary INT,
+    DepartmentId INT,
+    FOREIGN KEY (DepartmentId) REFERENCES Departments(Id)
+);
+
+CREATE TABLE Projects (
+    Id INT PRIMARY KEY,
+    Name TEXT NOT NULL,
+    StartDate DATE,
+    DepartmentId INT,
+    FOREIGN KEY (DepartmentId) REFERENCES Departments(Id)
+);

@@ -1,0 +1,12 @@
+SELECT * FROM Projects
+
+"1"	"Website"	"2024-01-01"	"1"
+"2"	"Recruitment"	"2024-02-01"	"2"
+
+
+DELETE FROM Projects
+WHERE Id = 2;
+
+SELECT * FROM Projects
+
+1	Website	2024-01-01	1

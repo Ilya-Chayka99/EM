@@ -1,0 +1,9 @@
+BEGIN;
+
+INSERT INTO Departments (Id, Name, Location)
+VALUES (3, 'Finance', 'Hamburg');
+
+INSERT INTO Projects (Id, Name, StartDate, DepartmentId)
+VALUES (3, 'Accounting System', '2024-03-01', 3);
+
+COMMIT;
